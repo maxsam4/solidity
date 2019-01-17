@@ -462,7 +462,9 @@ For example, with ``bytes32 samevar = "stringliteral"`` the string literal is in
   this implicit conversion for equivalent functionality. For example to compare
   two strings ``keccak256(abi.encode(s1)) == keccak256(abi.encode(s2))``, or to
   concatenate two strings already encoded with ``abi.encodePacked(s1, s2);``.
-In general, you should always convert strings to a ``bytes`` before manipulating it.
+
+  In general, you should always convert strings to a ``bytes`` before manipulating it.
+
 String literals support the following escape characters:
 
  - ``\<newline>`` (escapes an actual newline)
