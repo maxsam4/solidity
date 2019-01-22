@@ -41,9 +41,9 @@ Operators:
 
 .. warning::
 
-  Integers in Solidity are restricted to a certain range. For example, with ``uint256``, this is ``0`` up to ``2**256 - 1``.
+  Integers in Solidity are restricted to a certain range. For example, with ``uint32``, this is ``0`` up to ``2**32 - 1``.
   If the result of some operation on those numbers does not fit inside this range, it is truncated. These truncations can have
-  `serious consequences <https://en.bitcoin.it/wiki/Value_overflow_incident>`_, and code such as ``require((balanceOf[_to] + _value) >= balanceOf[_to])`` can help you check if values are what you expect.
+  serious consequences, and code such as ``require((balanceOf[_to] + _value) >= balanceOf[_to])`` can help you check if values are what you expect.
 
 Comparisons
 ^^^^^^^^^^^
